@@ -8,14 +8,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { lightTheme, darkTheme } from '../utils/theme';
 import createEmotionCache from '../utils/createEmotionCache';
 
-import 'typeface-oswald';
 import 'typeface-raleway';
-import 'typeface-poppins';
-import 'typeface-inconsolata';
-import 'typeface-inter';
-import 'typeface-montserrat';
-import 'typeface-roboto-slab';
-import 'typeface-work-sans';
 import React from 'react';
 
 // Client-side cache, shared for the whole session of the user in the browser.
