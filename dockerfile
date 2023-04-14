@@ -33,8 +33,6 @@ COPY --chown=nextjs:nodejs entrypoint.sh .env.production ./
 RUN apk add --no-cache --upgrade bash gettext && \
     chmod +x entrypoint.sh
 
-ENTRYPOINT ["./entrypoint.sh"]
-
 USER nextjs
 
 EXPOSE 3000
@@ -43,4 +41,4 @@ ENV PORT=3000 \
     NEXT_TELEMETRY_DISABLED=1 \
     NODE_ENV=production
 
-CMD ["node_modules/.bin/next", "start"]
+CMD ./entrypoint.sh && node_modules/.bin/next start
