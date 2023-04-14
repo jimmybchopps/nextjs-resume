@@ -27,7 +27,7 @@ COPY --from=builder /app/next.config.js ./next.config.js
 COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
-COPY --chown=nextjs:nodejs entrypoint.sh .env.production .
+COPY --chown=nextjs:nodejs entrypoint.sh .env.production ./
 
 # Add utility used to replace environment variables in script
 RUN apk add --no-cache --upgrade bash gettext && \
