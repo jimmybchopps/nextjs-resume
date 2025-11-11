@@ -22,40 +22,48 @@ let data = {
 			degree: 'Master of Computer Science',
 			graduationYear: '2019',
 		},
+		{
+			id: 3,
+			school: 'The University of Texas at Austin',
+			schoolUrl: 'https://www.mygreatlearning.com/eportfolio/jimmy-bourque',
+			degree:
+				'Post Graduate Program in Artificial Intelligence and Machine Learning',
+			graduationYear: '2025',
+		},
 	],
 	certifications: [
 		{
-			id: 2,
+			id: 1,
 			title: 'Architecting Microsoft Azure Solutions',
 			link: 'https://www.credly.com/badges/e6e474b4-cdc0-451e-8805-ded4a1536ea5',
 			dateAchieved: '29 December 2015',
 		},
 		{
-			id: 3,
+			id: 2,
 			title: 'CKAD: Certificate Kubernetes Application Developer',
 			link: 'https://www.credly.com/badges/0836049e-e150-4321-9d97-ebb537cf96f1',
-			dateAchieved: '25 September 2021',
+			dateAchieved: '14 October 2025',
+		},
+		{
+			id: 3,
+			title: 'CompTIA Security+ CE',
+			link: 'https://www.credly.com/badges/44be2b36-0ba3-4427-b960-6be43e31924b',
+			dateAchieved: '03 October 2024',
 		},
 		{
 			id: 4,
-			title: 'CompTIA Security+ CE',
-			link: 'https://www.credly.com/badges/44be2b36-0ba3-4427-b960-6be43e31924b',
-			dateAchieved: '15 October 2021',
+			title: 'CKA: Certified Kubernetes Administrator',
+			link: 'https://www.credly.com/badges/564a32af-932d-42e6-b642-d24a003574c4',
+			dateAchieved: '22 October 2025',
 		},
 		{
 			id: 5,
-			title: 'CKA: Certified Kubernetes Administrator',
-			link: 'https://www.credly.com/badges/564a32af-932d-42e6-b642-d24a003574c4',
-			dateAchieved: '15 July 2022',
-		},
-		{
-			id: 6,
 			title: 'Cornell: Python for Data Science',
 			link: 'https://ecornell.cornell.edu/certificates/data-science/python-for-data-science/',
 			dateAchieved: '30 November 2022',
 		},
 		{
-			id: 7,
+			id: 6,
 			title: 'AWS Certified Solutions Architect - Associate',
 			link: 'https://www.credly.com/badges/3869260e-d08c-4e0d-9259-b0215776e36c',
 			dateAchieved: '22 March 2023',
@@ -138,7 +146,7 @@ let data = {
 			skillName: 'Python',
 			blurb:
 				'Competent in Python programming for application development, automation, data analysis/processing, and machine learning.',
-			rating: 75,
+			rating: 95,
 		},
 		{
 			id: 9,
@@ -154,12 +162,34 @@ let data = {
 				'Familiar with front-end web development using ReactJS and NextJS frameworks for building interactive user interfaces.',
 			rating: 40,
 		},
+		{
+			id: 11,
+			skillName: 'AI/ML',
+			blurb:
+				'Proficient in machine learning and deep learning using Python, TensorFlow, and scikit-learn for building, training, and evaluating predictive models.',
+			rating: 90,
+		},
 	],
 	workHistory: [
 		{
 			id: 1,
-			startDate: 'Sep 2021',
+			startDate: 'Aug 2023',
 			endDate: '',
+			company: 'BridgePhase',
+			companyLink: 'https://bridgephase.com/',
+			jobTitle: 'Staff DevSecOps Engineer',
+			jobDescription:
+				'Lead engineer specializing in Kubernetes and Helm-based deployments for the Big Bang platform. Skilled in managing internal Kubernetes clusters, developing and maintaining complex Helm charts, and improving usability and security for end users through solutions like network policies, authorization policies, and peer authentications. Focused on reducing complexity and code duplication through reusable library chart components and streamlined deployment patterns',
+			additionalInfo: [
+				'Extended internal automated testing frameworks to be reusable by end users',
+				'Spearheaded migration from operator-based Istio deployments',
+				'Drove adoption of Istio Ambient Mode and created a migration path from sidecar that incurred no downtime',
+			],
+		},
+		{
+			id: 2,
+			startDate: 'Sep 2021',
+			endDate: 'Aug 2023',
 			company: 'Raft Technologies',
 			companyLink: 'https://goraft.tech/',
 			jobTitle: 'Principal Engineer',
@@ -171,7 +201,7 @@ let data = {
 			],
 		},
 		{
-			id: 2,
+			id: 3,
 			startDate: 'Jul 2019',
 			endDate: 'Sep 2021',
 			company: 'Concord Technologies',
@@ -186,7 +216,7 @@ let data = {
 			],
 		},
 		{
-			id: 3,
+			id: 4,
 			startDate: 'Jan 2015',
 			endDate: 'Jul 2019',
 			company: 'K2',
@@ -200,7 +230,7 @@ let data = {
 			],
 		},
 		{
-			id: 4,
+			id: 5,
 			startDate: 'Jan 2014',
 			endDate: 'Dec 2014',
 			company: 'Geocent',
@@ -214,9 +244,9 @@ let data = {
 			],
 		},
 		{
-			id: 5,
+			id: 6,
 			startDate: 'Sep 2011',
-			endDate: 'Jul 2013',
+			endDate: 'Dec 2013',
 			company: 'Rackspace, the Open Cloud Company',
 			companyLink: 'https://www.rackspace.com/',
 			jobTitle: 'SharePoint Engineer',
